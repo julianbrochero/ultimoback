@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, Path, HTTPException
 from fastapi.responses import JSONResponse
 from typing import List
 from backend.config.database import Session
-from models.reserva import Reserva as ReservaModel
+from backend.models.reserva import Reserva as ReservaModel
 from schemas.reserva import Reserva
 from services.reserva import ReservaService
 from middlewares.jwt_bearer import JWTBearer

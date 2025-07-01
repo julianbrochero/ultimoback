@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import Optional, List
 from backend.config.database import Session
-from models.vehiculo import Vehiculo as VehiculoModel
+from backend.models.vehiculo import Vehiculo as VehiculoModel
 from fastapi.encoders import jsonable_encoder
 from middlewares.jwt_bearer import JWTBearer
 from services.vehiculo import VehiculoService

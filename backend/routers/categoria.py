@@ -3,7 +3,7 @@ from fastapi import Depends, Path, Query
 from fastapi.responses import JSONResponse
 from typing import List
 from backend.config.database import Session
-from models.categoria import Categoria as CategoriaModel
+from backend.models.categoria import Categoria as CategoriaModel
 from fastapi.encoders import jsonable_encoder
 from middlewares.jwt_bearer import JWTBearer
 from services.categoria import CategoriaService
