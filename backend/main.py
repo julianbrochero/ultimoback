@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-from config.database import engine, Base
-from middlewares.error_handler import ErrorHandler
-from routers.usuario import usuario_router
-from routers.vehiculo import vehiculo_router
-from routers.categoria import categoria_router
-from routers.reservas import reserva_router
+from backend.config.database import engine, Base
+from backend.middlewares.error_handler import ErrorHandler
+from backend.routers.usuario import usuario_router
+from backend.routers.vehiculo import vehiculo_router
+from backend.routers.categoria import categoria_router
+from backend.routers.reservas import reserva_router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

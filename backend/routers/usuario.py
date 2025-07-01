@@ -3,7 +3,7 @@ from fastapi import Depends, Path, Query
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import Optional, List
-from backend.config.database import Session  
+from backend.config.database import SessionLocal
 from models.usuario import Usuario as UsuarioModel
 from fastapi.encoders import jsonable_encoder
 from middlewares.jwt_bearer import JWTBearer
